@@ -7,3 +7,8 @@ A simple tool for extracting the stats of an individual player from NEJTA TROLS.
 Grab the bookmarklet version (in `Bookmarklet.url`) and just click to run.
 
 Create a bookmark and copy the entire contents of `Bookmarklet.url` as the URL of the bookmark. This creates a bookmarklet, a script that runs whenever you click the bookmark.
+
+### Chrome Extensions
+Note that this extension will not be available in the Chrome Web Store.
+
+(This feature is coming soon...)
