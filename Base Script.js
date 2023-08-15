@@ -3,8 +3,8 @@
 	// be prepared to abort any time due to an unexpected error
 	try {
 		// double check this is the right website
-		if (window.location.host !== "trols.org.au" &&
-			(window.location.pathname === "/nejta/results.php" || window.location.pathname === "/nejta/p_results.php")) {
+		if (window.location.host !== "trols.org.au" ||
+			(window.location.pathname !== "/nejta/results.php" && window.location.pathname !== "/nejta/p_results.php")) {
 			console.warn("Attempted to run NEJTA TROLS Player Stat Extractor on a different page.");
 			return;
 		}
