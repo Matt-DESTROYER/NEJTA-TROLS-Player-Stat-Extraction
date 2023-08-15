@@ -4,7 +4,10 @@
 	try {
 		// double check this is the right website
 		if (window.location.host !== "trols.org.au" &&
-			(window.location.pathname === "/nejta/results.php" || window.location.pathname === "/nejta/p_results.php")) return;
+			(window.location.pathname === "/nejta/results.php" || window.location.pathname === "/nejta/p_results.php")) {
+			console.warn("Attempted to run NEJTA TROLS Player Stat Extractor on a different page.");
+			return;
+		}
 		
 		// user input
 		const GET_TEAM_STATS = (window.prompt("Enter the club/team to get stats for:") || "").trim().toLowerCase();
